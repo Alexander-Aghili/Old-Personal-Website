@@ -1,0 +1,3 @@
+Adjust the modal such that the images are larger and clicking anywhere on the screen brings the image back down. 
+Possibly remove close button after that.
+Fix vertical modal

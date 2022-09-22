@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Druid Heights</title>
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/article.css">
+    <link rel="stylesheet" href="../../css/images.css">
+            
+    <!-- Javascipt Links -->
+    <script src="../../js/enlarge.js"></script>
+
+</head>
+<body>
+    
+    <!--Navigation bar-->
+    <nav class="navbar">
+        <!-- NAVIGATION MENU -->
+        <div class = "titlefont">Alexander Aghili</div>
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="https://read.cv/alexanderaghili">Experience</a></li>
+          </div>
+        </ul>
+    </nav>
+    <!--end of Navigation bar-->
+
+    <!-- Outside element project the list -->
+    <div class="page2">
+        <!--Title-->
+        <h1 class="titleheader">Druid Heights</h1>
+        <!--Subtitle-->
+        <h3 class="subtitle">
+            The remains of a bohemian communal living area reside in the depths of Muir Woods.
+            I ventured out to explore the area. 
+            Here are my discoveries and the story behind the place.
+        </h3>
+        <!--First Image-->
+        <div class="image-container">
+            <img class="horizontal image" src="../../images/DruidHeights/Aban1.jpg" 
+                id="Aban1" onclick="enlargeImg(
+                    document.getElementById('Aban1'), 
+                    document.getElementById('Aban1Modal'), 
+                    document.getElementById('Aban1ModalContent'))";>
+            </img>
+            <!-- The Modal -->
+            <div id="Aban1Modal" class="modal">
+                <span class="close" onclick="closeImg(document.getElementById('Aban1Modal'))">&times;</span>
+                <img class="modal-content" id="Aban1ModalContent">
+            </div>
+        </div>
+        <!--Article-->
+        <div class="content">
+            <div class="paragraph">
+                <!--This for tabbing-->
+                <span class="tab"></span>
+                A few weeks ago, I was listening to the philosophical teachings of famous writer and speaker Alan Watts. 
+                You may have heard a few of his speeches online since they are everywhere in the motivational speaker side of Youtube. 
+                This channel,
+                <a class="hypertext" href="https://www.youtube.com/c/TrueMeaning/">TrueMeaning</a>
+                is entirely Alan Watt’s teachings, the very same channel I was listening to. 
+            </div>
+            <div class="image-container">
+                <img class="vertical image" src="../../images/DruidHeights/Watts.jpg" 
+                    id="Watts" onclick="enlargeImg(
+                        document.getElementById('Watts'), 
+                        document.getElementById('WattsModal'), 
+                        document.getElementById('WattsModalContent'))";>
+                </img>
+                <!-- The Modal -->
+                <div id="WattsModal" class="modal">
+                    <span class="close" onclick="closeImg(document.getElementById('WattsModal'))">&times;</span>
+                    <img class="modal-content" id="WattsModalContent">
+                </div>
+            </div>
+            <div class="paragraph">
+                <span class="tab"></span>
+                I became curious about the man and immediately ventured onto Wikipedia. 
+                There, I discovered that he died on Mount Tamalpais, the largest mountain in the county of Marin where I live, in some town called Druid Heights. 
+                I quickly realized that this was no ordinary town. According to 
+                <a class="hypertext" href="https://en.wikipedia.org/wiki/Druid_Heights">Wikipedia</a>
+                , Druid Heights was a bohemian community that spawned from famous poet Elsa Gidlow and was host to many influential artisans in the San Francisco counterculture era. 
+                However, the Federal government was able to take the land (Either by purchase or eminent domain) and incorporated it into the Golden Gate National Recreation Area during the 1970s. 
+                All but two of the buildings were abandoned and left to rot.
+            </div>
+            <div class="image-container">
+                <img class="vertical image" src="../../images/DruidHeights/Aban2.jpg" 
+                    id="Aban2" onclick="enlargeImg(
+                        document.getElementById('Aban2'), 
+                        document.getElementById('Aban2Modal'), 
+                        document.getElementById('Aban2ModalContent'))";>
+                </img>
+                <!-- The Modal -->
+                <div id="Aban2Modal" class="modal">
+                    <span class="close" onclick="closeImg(document.getElementById('Aban2Modal'))">&times;</span>
+                    <img class="modal-content" id="Aban2ModalContent">
+                </div>
+            </div>
+            <div class="paragraph">
+                <span class="tab"></span>
+                I decided that I would go explore this place, so I got up, called my friend, and off we went.
+                 The exact address is 732 Camino del Canyon, but you can’t drive all the way there. 
+                 Instead you have to park in a small lot on Muir Woods Rd right next to the entrance of Camino Del Canyon. 
+                 From there, it is a 20 minute walk along the road until you reach the place. 
+                 I used a map to try and navigate around the region, but it was difficult to identity the separate houses with the thick tree cover. 
+            </div>
+            <div class="sidebyside">
+                <div class="image-container">
+                    <img class="horizontal image" src="../../images/DruidHeights/DruidMap.jpg" 
+                        id="DruidMap" onclick="enlargeImg(
+                            document.getElementById('DruidMap'), 
+                            document.getElementById('DruidMapModal'), 
+                            document.getElementById('DruidMapModalContent'))";>
+                    </img>
+                    <!-- The Modal -->
+                    <div id="DruidMapModal" class="modal">
+                        <span class="close" onclick="closeImg(document.getElementById('DruidMapModal'))">&times;</span>
+                        <img class="modal-content" id="DruidMapModalContent">
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img class="horizontal image" src="../../images/DruidHeights/Map.png" 
+                        id="Map" onclick="enlargeImg(
+                            document.getElementById('Map'), 
+                            document.getElementById('MapModal'), 
+                            document.getElementById('MapModalContent'))";>
+                    </img>
+                    <!-- The Modal -->
+                    <div id="MapModal" class="modal">
+                        <span class="close" onclick="closeImg(document.getElementById('MapModal'))">&times;</span>
+                        <img class="modal-content" id="MapModalContent">
+                    </div>
+                </div>
+            </div>
+            <div class="paragraph">
+                <span class="tab"></span>
+                Additionally, there were a couple of private areas that were not part of the Golden Gate National Recreation Area, so if you decide to go, be careful to avoid trespassing. 
+                When we approached the area, we saw a building up on a hill that had collapsed. 
+                It was behind dense and overgrown plants making it inaccessible. We continued along the path until we found an entrance onto the hill. 
+                Below are all of the photos from the area.
+            </div>
+            
+            <div class="sidebyside">
+                <div class="image-container">
+                    <img class="horizontal image" src="../../images/DruidHeights/ArtInWattLib.jpg" 
+                        id="ArtInWattLib" onclick="enlargeImg(
+                            document.getElementById('ArtInWattLib'), 
+                            document.getElementById('ArtInWattLibModal'), 
+                            document.getElementById('ArtInWattLibModalContent'))";>
+                    </img>
+                    <!-- The Modal -->
+                    <div id="ArtInWattLibModal" class="modal">
+                        <span class="close" onclick="closeImg(document.getElementById('ArtInWattLibModal'))">&times;</span>
+                        <img class="modal-content" id="ArtInWattLibModalContent">
+                    </div>
+                </div>
+
+                <div class="image-container">
+                    <img class="horizontal image" src="../../images/DruidHeights/ManyTrees.jpg" 
+                        id="ManyTrees" onclick="enlargeImg(
+                            document.getElementById('ManyTrees'), 
+                            document.getElementById('ManyTreesModal'), 
+                            document.getElementById('ManyTreesModalContent'))";>
+                    </img>
+                    <!-- The Modal -->
+                    <div id="ManyTreesModal" class="modal">
+                        <span class="close" onclick="closeImg(document.getElementById('ManyTreesModal'))">&times;</span>
+                        <img class="modal-content" id="ManyTreesModalContent">
+                    </div>
+                </div>
+            </div>
+            <div class="sidebyside">
+                <div class="image-container">
+                    <img class="vertical image" src="../../images/DruidHeights/Car.jpg" 
+                        id="Car" onclick="enlargeImg(
+                            document.getElementById('Car'), 
+                            document.getElementById('CarModal'), 
+                            document.getElementById('CarModalContent'))";>
+                    </img>
+                    <!-- The Modal -->
+                    <div id="CarModal" class="modal">
+                        <span class="close" onclick="closeImg(document.getElementById('CarModal'))">&times;</span>
+                        <img class="modal-content" id="CarModalContent">
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img class="vertical image" src="../../images/DruidHeights/CoolWindow.jpg" 
+                        id="CoolWindow" onclick="enlargeImg(
+                            document.getElementById('CoolWindow'), 
+                            document.getElementById('CoolWindowModal'), 
+                            document.getElementById('CoolWindowModalContent'))";>
+                    </img>
+                    <!-- The Modal -->
+                    <div id="CoolWindowModal" class="modal">
+                        <span class="close" onclick="closeImg(document.getElementById('CoolWindowModal'))">&times;</span>
+                        <img class="modal-content" id="CoolWindowModalContent">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebyside">
+                <div class="image-container">
+                    <img class="vertical image" src="../../images/DruidHeights/JapaneseMeditation.jpg" 
+                        id="JapaneseMeditation" onclick="enlargeImg(
+                            document.getElementById('JapaneseMeditation'), 
+                            document.getElementById('JapaneseMeditationModal'), 
+                            document.getElementById('JapaneseMeditationModalContent'))";>
+                    </img>
+                    <!-- The Modal -->
+                    <div id="JapaneseMeditationModal" class="modal">
+                        <span class="close" onclick="closeImg(document.getElementById('JapaneseMeditationModal'))">&times;</span>
+                        <img class="modal-content" id="JapaneseMeditationModalContent">
+                    </div>
+                </div>
+    
+                <div class="image-container">
+                    <img class="vertical image" src="../../images/DruidHeights/Kitchen.jpg" 
+                        id="Kitchen" onclick="enlargeImg(
+                            document.getElementById('Kitchen'), 
+                            document.getElementById('KitchenModal'), 
+                            document.getElementById('KitchenModalContent'))";>
+                    </img>
+                    <!-- The Modal -->
+                    <div id="KitchenModal" class="modal">
+                        <span class="close" onclick="closeImg(document.getElementById('KitchenModal'))">&times;</span>
+                        <img class="modal-content" id="KitchenModalContent">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebyside">
+                <div class="image-container">
+                    <img class="vertical image" src="../../images/DruidHeights/TahoeMap.jpg" 
+                        id="TahoeMap" onclick="enlargeImg(
+                            document.getElementById('TahoeMap'), 
+                            document.getElementById('TahoeMapModal'), 
+                            document.getElementById('TahoeMapModalContent'))";>
+                    </img>
+                    <!-- The Modal -->
+                    <div id="TahoeMapModal" class="modal">
+                        <span class="close" onclick="closeImg(document.getElementById('TahoeMapModal'))">&times;</span>
+                        <img class="modal-content" id="TahoeMapModalContent">
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img class="vertical image" src="../../images/DruidHeights/Window.jpg" 
+                        id="Window" onclick="enlargeImg(
+                            document.getElementById('Window'), 
+                            document.getElementById('WindowModal'), 
+                            document.getElementById('WindowModalContent'))";>
+                    </img>
+                    <!-- The Modal -->
+                    <div id="WindowModal" class="modal">
+                        <span class="close" onclick="closeImg(document.getElementById('WindowModal'))">&times;</span>
+                        <img class="modal-content" id="WindowModalContent">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img class="horizontal image" src="../../images/DruidHeights/WattsLib.jpg" 
+                    id="WattsLib" onclick="enlargeImg(
+                        document.getElementById('WattsLib'), 
+                        document.getElementById('WattsLibModal'), 
+                        document.getElementById('WattsLibModalContent'))";>
+                </img>
+                <!-- The Modal -->
+                <div id="WattsLibModal" class="modal">
+                    <span class="close" onclick="closeImg(document.getElementById('WattsLibModal'))">&times;</span>
+                    <img class="modal-content" id="WattsLibModalContent">
+                </div>
+            </div>
+            
+        </div>
+        <!--Bottom-->
+    </div>
+    
+</body>
+</html>

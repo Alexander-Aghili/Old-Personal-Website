@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Title</title>
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/article.css">
+    <link rel="stylesheet" href="../../css/images.css">
+
+    <!-- Javascipt Links -->
+    <script src="../../js/enlarge.js"></script>
+
+</head>
+<body>
+    
+    <!--Navigation bar-->
+    <nav class="navbar">
+        <!-- NAVIGATION MENU -->
+        <div class = "titlefont">Alexander Aghili</div>
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="https://read.cv/alexanderaghili">Experience</a></li>
+          </div>
+        </ul>
+    </nav>
+    <!--end of Navigation bar-->
+
+    <!-- Outside element project the list -->
+    <div class="page2">
+        <!--Title-->
+        <h1 class="titleheader">Title</h1>
+        <!--Subtitle-->
+        <h3 class="subtitle">
+            This is the long subtitle describing the activity.
+            The purpose of this is to give a short introduction or something of that sort.
+        </h3>
+        <!--First Image-->
+        <div class="image-container">
+            <img class="horizontal image" src="../../images/example.jpg" 
+                id="Example" onclick="enlargeImg(
+                    document.getElementById('Example'), 
+                    document.getElementById('ExampleModal'), 
+                    document.getElementById('ExampleModalContent'))";>
+            </img>
+            <!-- The Modal -->
+            <div id="ExampleModal" class="modal">
+                <span class="close" onclick="closeImg(document.getElementById('ExampleModal'))">&times;</span>
+                <img class="modal-content" id="ExampleModalContent">
+            </div>
+        </div>
+        <!--Article-->
+        <div class="content">
+            <div class="paragraph">
+                <!--This for tabbing-->
+                <span class="tab"></span>This is the article content.
+            </div>
+            <!--Image insert-->
+            <div class="image-container">
+                <img class="vertical image" src="../../images/example2.jpg"
+                    id="Example2" onclick="enlargeImg(
+                        document.getElementById('Example2'), 
+                        document.getElementById('Example2Modal'), 
+                        document.getElementById('Example2ModalContent'))";>
+                </img>
+                <div id="Example2Modal" class="modal">
+                    <span class="close" onclick="closeImg(document.getElementById('Example2Modal'))">&times;</span>
+                    <img class="modal-content" id="Example2ModalContent">
+                </div>
+            </div>
+        </div>
+        <!--Bottom-->
+    </div>
+
+</body>
+</html>

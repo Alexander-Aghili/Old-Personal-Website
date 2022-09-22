@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/overviewpage.css">
+    
+</head>
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar">
+        <!-- NAVIGATION MENU -->
+        <div class = "titlefont">Alexander Aghili</div>
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="https://read.cv/alexanderaghili">Experience</a></li>
+          </div>
+        </ul>
+    </nav>
+    <!--end of Navigation bar-->
+
+    <!-- Outside element project the list -->
+    <div class="page">
+      <ul>
+        <li>
+          <a class="licontainer" href="./projects/publicpoll.html">
+            <!--Title-->
+            <h2 class="baseheader">Public Poll Mobile App</h2>
+            <!-- Short Description -->
+            <div class="basetext">
+              This is a mobile app I made with Flutter, Apache Tomcat (Java), SQL, and some use of Redis.
+              It allows users to create accounts, create, respond to, and save polls, and even comment on those polls.
+              I developed a custom authentication system, polls, and comment systems.
+            </div> 
+          </a>
+        </li>
+      </ul>
+    </div>
+
+</body>
+</html>

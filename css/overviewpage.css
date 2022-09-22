@@ -1,0 +1,31 @@
+.thumbnail {
+    width: 200px;
+    height: 200px;
+    margin-right: 5px;
+}
+  
+.imagedescriptionlayer {
+    display: flex;
+}
+  
+.titlelayer{
+    display: flex;
+    justify-content: space-between;
+}
+
+  
+.licontainer{
+    display:block;
+    padding: 9px;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: inset;
+    border-color: lightgray;
+    border-width: 1px;
+}
+
+.licontainer:hover{
+    padding: 7px;
+    border-color: rgb(69, 52, 168);
+    border-width: 3px;
+}

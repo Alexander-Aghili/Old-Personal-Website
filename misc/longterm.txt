@@ -1,0 +1,5 @@
+I would like to redo this in the future using React or Next or something similar
+in order to make my website look better and render special UI elements.
+This is shown in TKs website. 
+https://tanishqkancharla.dev/blog/what-i-learned
+https://github.com/tanishqkancharla/tanishqkancharla.dev/tree/main/src/pages

@@ -1,0 +1,6 @@
+This modal business can be a large issue if the naming convetions aren't maintained.
+Therefore, all modals will be named as such.
+
+img_id: The image name as titled under the images folder, without the suffix.
+modal_id: Will be the image name with the word Modal at the end
+modal_img_id: Will be the image name with the wordal ModalContent at the end

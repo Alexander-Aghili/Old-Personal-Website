@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Poll</title>
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/article.css">
+    <link rel="stylesheet" href="../../css/images.css">
+
+    <!-- Javascipt Links -->
+    <script src="../../js/enlarge.js"></script>
+
+</head>
+<body>
+    
+    <!--Navigation bar-->
+    <nav class="navbar">
+        <!-- NAVIGATION MENU -->
+        <div class = "titlefont">Alexander Aghili</div>
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="https://read.cv/alexanderaghili">Experience</a></li>
+          </div>
+        </ul>
+    </nav>
+    <!--end of Navigation bar-->
+
+    <!-- Outside element project the list -->
+    <div class="page2">
+        <!--Title-->
+        <h1 class="titleheader">Public Poll Mobile App</h1>
+        <!--Subtitle-->
+        <h3 class="subtitle">
+            This was a mobile app that I developed to use as polls between my friends. 
+        </h3>
+        <!--First Image-->
+        <div class="image-container">
+            <img class="screenshot image" src="../../images/PublicPoll/MainPollScreen.png" 
+                id="MainPollScreen" onclick="enlargeImg(
+                    document.getElementById('MainPollScreen'),  
+                    document.getElementById('MainPollScreenModal'), 
+                    document.getElementById('MainPollScreenModalContent'))";>
+            </img>
+            <!-- The Modal -->
+            <div id="MainPollScreenModal" class="modal">
+                <span class="close" onclick="closeImg(document.getElementById('MainPollScreenModal'))">&times;</span>
+                <img class="modal-content" id="MainPollScreenModalContent">
+            </div>
+        </div>
+        <!--Article-->
+        <div class="content">
+            <div class="paragraph">
+                <!--This for tabbing-->
+                <span class="tab"></span> This was my first ever attempt at create a full stack application on my own
+                and I decided it would be fun to do it as a mobile app instead of as a web app since the world is going mobile.
+                Below are the lists of technologies, a description of what I learned, how it works, 
+                and at the bottom is the link to both github repos.
+            </div>
+
+            <!--Fix later to an interesting design-->
+            <h1 class="center">Technologies:</h1>
+            <div class="center paragraph">
+                <ul>
+                    <li>•&nbsp Frontend Language: Dart</li>
+                    <li>•&nbsp Frontend Framework: Flutter</li>
+                    <li>•&nbsp Backend Language: Java</li>
+                    <li>•&nbsp Backend Framework: Apache Tomcat</li>
+                    <li>•&nbsp Session Information: Redis</li>
+                    <li>•&nbsp Database: MySQL</li> 
+                    <li>•&nbsp Cloud Service: Digital Ocean</li>
+                    <li>•&nbsp Image Storage: AWS S3</li>
+                    <li>•&nbsp API: REST</li>
+                </ul>
+            </div>
+            <!--Add more later-->
+            <div class="paragraph">
+                <span class="tab"></span> I learned a lot from this entire process. 
+                I spent many hours going through logs and directories fixing bugs and improving preformance.
+                I had limited knowledge of REST APIs going into this, but I learned a great deal working on both the front and backend side of an API.
+                I also learned how to navigate varying screen dimensions, utilize cloud serices, make decisions about techology usage, and more.
+            </div>
+            <div class="paragraph">
+                <span class="tab"></span> The app includes many pages. There is of course a sign up and sign in page. 
+                Here users will sign in securely. 
+            </div>
+            <div class="image-container">
+                <img class="screenshot image" src="../../images/PublicPoll/Signin.png" 
+                    id="Signin" onclick="enlargeImg(
+                        document.getElementById('Signin'),  
+                        document.getElementById('SigninModal'), 
+                        document.getElementById('SigninModalContent'))";>
+                </img>
+                <div id="SigninModal" class="modal">
+                    <span class="close" onclick="closeImg(document.getElementById('SigninModal'))">&times;</span>
+                    <img class="modal-content" id="SigninModalContent">
+                </div>
+            </div>
+            <div class="paragraph">
+                <span class="tab"></span> 
+                Then there is the home page which includes a feed of all polls not responded to yet.
+                Refreshing the page is available by scrolling up or clicking the refresh button in the bottom right.
+                Each poll contains a question, up to 26 possible answers (A-Z), a statistics page to show the results, and includes comments from others.
+                On the comment page, you can access other people's account page by clicking on their profile picture.
+            </div>
+            <div class="sidebyside">
+                <div class="image-container">
+                    <img class="screenshot image" src="../../images/PublicPoll/Comment.png" 
+                        id="Comment" onclick="enlargeImg(
+                            document.getElementById('Comment'),  
+                            document.getElementById('CommentModal'), 
+                            document.getElementById('CommentModalContent'))";>
+                    </img>
+                    <div id="CommentModal" class="modal">
+                        <span class="close" onclick="closeImg(document.getElementById('CommentModal'))">&times;</span>
+                        <img class="modal-content" id="CommentModalContent">
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img class="screenshot image" src="../../images/PublicPoll/StatPage.png" 
+                        id="StatPage" onclick="enlargeImg(
+                            document.getElementById('StatPage'),  
+                            document.getElementById('StatPageModal'), 
+                            document.getElementById('StatPageModalContent'))";>
+                    </img>
+                    <div id="StatPageModal" class="modal">
+                        <span class="close" onclick="closeImg(document.getElementById('StatPageModal'))">&times;</span>
+                        <img class="modal-content" id="StatPageModalContent">
+                    </div>
+                </div>
+            </div>
+            <div class="paragraph">
+                <span class="tab"></span> There is a create poll page in which a poll can be created and published.
+            </div>
+            <div class="sidebyside">
+                <div class="image-container">
+                    <img class="screenshot image" src="../../images/PublicPoll/CreatePollPage.png" 
+                        id="CreatePollPage" onclick="enlargeImg(
+                            document.getElementById('CreatePollPage'),  
+                            document.getElementById('CreatePollPageModal'), 
+                            document.getElementById('CreatePollPageModalContent'))";>
+                    </img>
+                    <div id="CreatePollPageModal" class="modal">
+                        <span class="close" onclick="closeImg(document.getElementById('CreatePollPageModal'))">&times;</span>
+                        <img class="modal-content" id="CreatePollPageModalContent">
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img class="screenshot image" src="../../images/PublicPoll/PollCreatedScreen.png" 
+                        id="PollCreatedScreen" onclick="enlargeImg(
+                            document.getElementById('PollCreatedScreen'),  
+                            document.getElementById('PollCreatedScreenModal'), 
+                            document.getElementById('PollCreatedScreenModalContent'))";>
+                    </img>
+                    <div id="PollCreatedScreenModal" class="modal">
+                        <span class="close" onclick="closeImg(document.getElementById('PollCreatedScreenModal'))">&times;</span>
+                        <img class="modal-content" id="PollCreatedScreenModalContent">
+                    </div>
+                </div>
+            </div>
+            <div class="paragraph">
+                <span class="tab"></span> The account page contains the users information and three lists of polls. 
+                The first is a list of all polls manually saved, 
+                the second is a list of all polls responded to,
+                and the final is a list of all polls created by that user.
+                There is also a settings button which allows the user to edit personal information, 
+                profile picture, or the theme(color) of the app.
+            </div>
+            <div class="image-container">
+                <img class="screenshot image" src="../../images/PublicPoll/AccountPage.png" 
+                    id="AccountPage" onclick="enlargeImg(
+                        document.getElementById('AccountPage'),  
+                        document.getElementById('AccountPageModal'), 
+                        document.getElementById('AccountPageModalContent'))";>
+                </img>
+                <div id="AccountPageModal" class="modal">
+                    <span class="close" onclick="closeImg(document.getElementById('AccountPageModal'))">&times;</span>
+                    <img class="modal-content" id="AccountPageModalContent">
+                </div>
+            </div>
+            <h1 class="center">Github Repos:</h1>
+            <div class="center ">
+                <ul>
+                    <li><h2><a href="https://github.com/Alexander-Aghili/PublicPollAppFrontEnd">Frontend</a></h2></li>
+                    <li><h2><a href="https://github.com/Alexander-Aghili/PublicPollBackEnd">Backend</a></h2></li>
+                </ul>
+            </div>
+        <!--Bottom-->
+    </div>
+
+</body>
+</html>

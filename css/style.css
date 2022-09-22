@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #202124;
+}
+
+a{
+  text-decoration: none;
+}
+.titlefont {
+  font-family: system-ui;
+  font-size: 32px;
+}
+
+li {
+  list-style: none;
+}
+
+/*Custom CSS*/
+.basetext {
+  color: gray;
+  font-size: 18px;
+}
+
+.baseheader {
+  color:white;
+  margin-bottom: 10px;
+}
+
+
+
+/* Projects css */
+.page {
+  margin-left:25%;
+  margin-right: 25%;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.page2 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10px;
+  align-items: center;
+}
+
+@media (max-width: 820px) {
+.page {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  align-items: center;
+}}
