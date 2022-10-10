@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexander Aghili's Website</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/images.css">
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
+`
+    <script src="./js/enlarge.js"></script>
+
 </head>
 <body>
 
@@ -33,9 +37,171 @@
       <div class="basetext"> 
         Hello, I'm Alex. 
         This is my website where I showcase some of my thoughts, interests, and projects.
+      </div>
+      <br>
+      <div class="basetext">
+        Check out my blog <a href="./html/blog.html">here</a> where I write about random things that I think are cool, 
+        like amazing places I visit or interesting stories I come across.
+      </div>
+      <br>
+      <div class="basetext">
+        Check out my personal projects <a href="./html/projects.html">here</a> where I write about projects I've done.
+      </div>
+      <br>
+      <div class="basetext">
+        Check out my professional experience <a href="https://read.cv/alexanderaghili">here</a>.
+        <!--or scroll down to see some of the technologies I know.-->
+      </div>
+      <br>
+      <div class="basetext">
+        Below are photos I think are cool:
       </div>  
     </div>
 
+    <!-- Add Technologies bar with ability to see my technologies -->
 
-</body>
-</html>
+    <div class="image-container">
+      <img class="horizontal image" src="./images/cool/CloudSunset.jpeg"
+        id="CloudSunset" onclick="enlargeImg(
+          document.getElementById('CloudSunset'),
+          document.getElementById('CloudSunsetModal'),
+          document.getElementById('CloudSunsetModalContent'))";>
+      </img>
+      <div id="CloudSunsetModal" class="modal">
+        <span class="close" onclick="closeImg(document.getElementById('CloudSunsetModal'))">&times;</span>
+        <img class="modal-content" id="CloudSunsetModalContent">
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="horizontal image" src="./images/cool/ForeverForest.jpeg"
+        id="ForeverForest" onclick="enlargeImg(
+          document.getElementById('ForeverForest'),
+          document.getElementById('ForeverForestModal'),
+          document.getElementById('ForeverForestModalContent'))";>
+      </img>
+      <div id="ForeverForestModal" class="modal">
+        <span class="close" onclick="closeImg(document.getElementById('ForeverForestModal'))">&times;</span>
+        <img class="modal-content" id="ForeverForestModalContent">
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="vertical image" src="./images/cool/LandsEndTree.jpeg"
+        id="LandsEndTree" onclick="enlargeImg(
+          document.getElementById('LandsEndTree'),
+          document.getElementById('LandsEndTreeModal'),
+          document.getElementById('LandsEndTreeModalContent'))";>
+      </img>
+      <div id="LandsEndTreeModal" class="modal">
+        <span class="close" onclick="closeImg(document.getElementById('LandsEndTreeModal'))">&times;</span>
+        <img class="modal-content" id="LandsEndTreeModalContent">
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="horizontal image" src="./images/cool/MarinHeadlands.jpeg"
+        id="MarinHeadlands" onclick="enlargeImg(
+          document.getElementById('MarinHeadlands'),
+          document.getElementById('MarinHeadlandsModal'),
+          document.getElementById('MarinHeadlandsModalContent'))";>
+      </img>
+      <div id="MarinHeadlandsModal" class="modal">
+        <span class="close" onclick="closeImg(document.getElementById('MarinHeadlandsModal'))">&times;</span>
+        <img class="modal-content" id="MarinHeadlandsModalContent">
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="vertical image" src="./images/cool/Pepper.jpeg"
+        id="Pepper" onclick="enlargeImg(
+          document.getElementById('Pepper'),
+          document.getElementById('PepperModal'),
+          document.getElementById('PepperModalContent'))";>
+      </img>
+      <div id="PepperModal" class="modal">
+        <span class="close" onclick="closeImg(document.getElementById('PepperModal'))">&times;</span>
+        <img class="modal-content" id="PepperModalContent">
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="vertical image" src="./images/cool/RailRoad.jpeg"
+        id="RailRoad" onclick="enlargeImg(
+          document.getElementById('RailRoad'),
+          document.getElementById('RailRoadModal'),
+          document.getElementById('RailRoadModalContent'))";>
+      </img>
+      <div id="RailRoadModal" class="modal">
+        <span class="close" onclick="closeImg(document.getElementById('RailRoadModal'))">&times;</span>
+        <img class="modal-content" id="RailRoadModalContent">
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="vertical image" src="./images/cool/RockFormation.jpeg"
+        id="RockFormation" onclick="enlargeImg(
+          document.getElementById('RockFormation'),
+          document.getElementById('RockFormationModal'),
+          document.getElementById('RockFormationModalContent'))";>
+      </img>
+      <div id="RockFormationModal" class="modal">
+        <span class="close" onclick="closeImg(document.getElementById('RockFormationModal'))">&times;</span>
+        <img class="modal-content" id="RockFormationModalContent">
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="horizontal image" src="./images/cool/SkyMarin.jpeg"
+        id="SkyMarin" onclick="enlargeImg(
+          document.getElementById('SkyMarin'),
+          document.getElementById('SkyMarinModal'),
+          document.getElementById('SkyMarinModalContent'))";>
+      </img>
+      <div id="SkyMarinModal" class="modal">
+        <span class="close" onclick="closeImg(document.getElementById('SkyMarinModal'))">&times;</span>
+        <img class="modal-content" id="SkyMarinModalContent">
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="horizontal image" src="./images/cool/SwissMountain.jpeg"
+        id="SwissMountain" onclick="enlargeImg(
+          document.getElementById('SwissMountain'),
+          document.getElementById('SwissMountainModal'),
+          document.getElementById('SwissMountainModalContent'))";>
+      </img>
+      <div id="SwissMountainModal" class="modal">
+        <span class="close" onclick="closeImg(document.getElementById('SwissMountainModal'))">&times;</span>
+        <img class="modal-content" id="SwissMountainModalContent">
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="vertical image" src="./images/cool/ThePlace.jpeg"
+        id="ThePlace" onclick="enlargeImg(
+          document.getElementById('ThePlace'),
+          document.getElementById('ThePlaceModal'),
+          document.getElementById('ThePlaceModalContent'))";>
+      </img>
+      <div id="ThePlaceModal" class="modal">
+        <span class="close" onclick="closeImg(document.getElementById('ThePlaceModal'))">&times;</span>
+        <img class="modal-content" id="ThePlaceModalContent">
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="horizontal image" src="./images/cool/TopofTam.jpeg"
+        id="TopofTam" onclick="enlargeImg(
+          document.getElementById('TopofTam'),
+          document.getElementById('TopofTamModal'),
+          document.getElementById('TopofTamModalContent'))";>
+      </img>
+      <div id="TopofTamModal" class="modal">
+        <span class="close" onclick="closeImg(document.getElementById('TopofTamModal'))">&times;</span>
+        <img class="modal-content" id="TopofTamModalContent">
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="vertical image" src="./images/cool/TopTahoe.jpeg"
+        id="TopTahoe" onclick="enlargeImg(
+          document.getElementById('TopTahoe'),
+          document.getElementById('TopTahoeModal'),
+          document.getElementById('TopTahoeModalContent'))";>
+      </img>
+      <div id="TopTahoeModal" class="modal">
+        <span class="close" onclick="closeImg(document.getElementById('TopTahoeModal'))">&times;</span>
+        <img class="modal-content" id="TopTahoeModalContent">
+      </div>
+    </div>
+    

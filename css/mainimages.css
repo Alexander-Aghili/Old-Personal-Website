@@ -1,0 +1,21 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.image {
+    cursor: -moz-zoom-in; 
+    cursor: -webkit-zoom-in; 
+    cursor: zoom-in;
+}
+
+.horizontal {
+    width: 600px;
+    height: 450px;    
+}
+
+.vertical {
+    width: 450px;
+    height: 600px;
+}
